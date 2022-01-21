@@ -8,11 +8,9 @@
         d:DataContext="{d:DesignInstance Type=viewmodel:MainVM}"
         mc:Ignorable="d"
         ResizeMode="NoResize"
-        Title="Reservation"
+        Title="Бронирование"
         Height="600" Width="900" WindowStartupLocation="CenterScreen" Closing="winClosing">
     <Grid>
-        <uc:ReservationCanvasUC Cursor="AppStarting" >
-            
-        </uc:ReservationCanvasUC>
+        <uc:ReservationCanvasUC Cursor="AppStarting" />
     </Grid>
 </Window>

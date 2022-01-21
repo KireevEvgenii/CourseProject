@@ -58,7 +58,7 @@ namespace CourseWork.Utils
             {
                 StackPanel stackPanel = new() { Orientation = Orientation.Vertical, Margin = new Thickness(10, 0, 0, 0) };
                 stackPanel.Children.Add(new TextBlock() { Text = TODAY.AddDays(i).DayOfWeek.ToString() });
-                stackPanel.Children.Add(new Label() { Content = TODAY.AddDays(i).ToString("d"), FontWeight = FontWeights.Bold, FontSize = 7 });
+                stackPanel.Children.Add(new Label() { Content = TODAY.AddDays(i).ToString("d"), FontSize = 8 });
                 contentHeaderGrid.Children.Add(stackPanel);
             }
         }

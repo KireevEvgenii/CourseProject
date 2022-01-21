@@ -7,7 +7,7 @@
         xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf" xmlns:viewmodel="clr-namespace:CourseWork.ViewModel" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" d:DataContext="{d:DesignInstance Type=viewmodel:ReservationVM}"
         mc:Ignorable="d"
         Title="Редактирование" Height="300" Width="300" WindowStartupLocation="CenterScreen">
-   
+
     <i:Interaction.Triggers>
         <i:EventTrigger EventName="Closed">
             <i:InvokeCommandAction Command="{Binding OnClosed}"/>
@@ -17,21 +17,21 @@
     <Grid>
         <StackPanel VerticalAlignment="Center" Width="150" Margin="0,0,0,30">
             <StackPanel>
-                <Label Content="Время начала"></Label>
+                <Label Content="Время начала" Width="90"/>
                 <syncfusion:SfMaskedEdit 
                 Text="{Binding TimeFrom}"
                     Mask="00:00" 
-                    Culture="ru-RU" 
+                    Culture="ru-RU" Width="100" 
                 />
             </StackPanel>
             <StackPanel>
-                <Label Content="Время конца"></Label>
+                <Label Content="Время конца" Width="90"></Label>
                 <syncfusion:SfMaskedEdit 
                 Text="{Binding TimeTo}" 
-                Mask="00:00"/>
+                Mask="00:00" Width="100"/>
             </StackPanel>
             <StackPanel>
-                <Label Content="Описание"></Label>
+                <Label Content="Описание" Width="90"></Label>
                 <TextBox 
                 Text="{Binding Members}" 
                 TextWrapping="WrapWithOverflow" 

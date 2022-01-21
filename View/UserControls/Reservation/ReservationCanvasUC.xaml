@@ -15,28 +15,27 @@
             DockPanel.Dock="Top" 
             Height="50">
 
-            <DockPanel Width="149"
-                HorizontalAlignment="Center" Margin="0,0,0,30">
+            <DockPanel Width="1653"
+                HorizontalAlignment="Left" Margin="-753,0,0,30" RenderTransformOrigin="0.509,0.567">
                 <Button 
                     Cursor="Hand"
-                    IsEnabled="{Binding IsEnabledPrevBtn}"
-                    DockPanel.Dock="Left" 
-                    Content="&lt;-" Width="76" Height="19" >
+                    DockPanel.Dock="Right" 
+                    Content="-&gt;" 
+                    IsEnabled="{Binding IsEnabledNextBtn}" Width="74" Height="20"
+                    >
                     <intr:Interaction.Triggers>
                         <intr:EventTrigger EventName="Click">
-                            <intr:InvokeCommandAction Command="{Binding PrevBtnClick}"/>
+                            <intr:InvokeCommandAction Command="{Binding NextBtnClick}"/>
                         </intr:EventTrigger>
                     </intr:Interaction.Triggers>
                 </Button>
                 <Button 
                     Cursor="Hand"
-                    DockPanel.Dock="Right" 
-                    Content="-&gt;" 
-                    IsEnabled="{Binding IsEnabledNextBtn}" Width="73" Height="19"
-                    >
+                    IsEnabled="{Binding IsEnabledPrevBtn}" 
+                    Content="&lt;-" Width="75" >
                     <intr:Interaction.Triggers>
                         <intr:EventTrigger EventName="Click">
-                            <intr:InvokeCommandAction Command="{Binding NextBtnClick}"/>
+                            <intr:InvokeCommandAction Command="{Binding PrevBtnClick}"/>
                         </intr:EventTrigger>
                     </intr:Interaction.Triggers>
                 </Button>

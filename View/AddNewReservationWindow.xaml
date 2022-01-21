@@ -17,20 +17,20 @@
     </i:Interaction.Triggers>
     <StackPanel VerticalAlignment="Center" Width="150" Margin="0,0,0,30">
         <StackPanel>
-            <Label Content="Время начала"></Label>
+            <Label Content="Время начала" Width="90"></Label>
             <syncfusion:SfMaskedEdit 
-                Text="{Binding TimeFrom}" Mask="00:00" Culture="ru-RU" 
+                Text="{Binding TimeFrom}" Mask="00:00" Culture="ru-RU" Width="80" 
               
                 />
         </StackPanel>
         <StackPanel>
-            <Label Content="Время конца"></Label>
+            <Label Content="Время конца" Width="90"></Label>
             <syncfusion:SfMaskedEdit 
                 Text="{Binding TimeTo}" 
-                Mask="00:00"  />
+                Mask="00:00" Width="80"  />
         </StackPanel>
         <StackPanel>
-            <Label Content="Описание"></Label>
+            <Label Content="Описание" Width="80"></Label>
             <TextBox 
                 Text="{Binding Members}" 
                 TextWrapping="WrapWithOverflow" 

@@ -19,7 +19,7 @@ namespace CourseWork.ViewModel
             MainWindow mainWindow = new();
             if (UserService.AuthUser(Nickname, Password))
                 CommonUtil.OpenWindow(mainWindow);
-            else MessageBox.Show("WRONG DATA!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            else MessageBox.Show("Неверный логин или пароль", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
         }
         private void _OnWndLoaded() => UserService.CreateUser("test", "123");
 
